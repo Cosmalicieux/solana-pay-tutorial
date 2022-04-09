@@ -49,7 +49,7 @@ export default function NumberInput({ name, formRef }: Props) {
         name={name}
         value={number}
         onChange={e => setNumber(Number(e.target.value))}
-        min={0}
+        max={12}
         className="w-12 border-none focus:ring-0 text-center bg-gray-200"
       />
       <button
