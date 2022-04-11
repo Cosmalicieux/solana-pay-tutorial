@@ -1,6 +1,6 @@
 import { useRef } from "react";
-import { productsD } from "../lib/products"
 import { products } from "../lib/products"
+import { productsD } from "../lib/products"
 import NumberInputD from "./NumberInputD";
 import NumberInput from "./NumberInput";
 
@@ -8,7 +8,6 @@ interface Props {
   submitTarget: string;
   enabled: boolean;
 }
-
 export default function Products({ submitTarget, enabled }: Props) {
   const formRef = useRef<HTMLFormElement>(null);
 
@@ -25,7 +24,7 @@ export default function Products({ submitTarget, enabled }: Props) {
                   <span className="mt-4 text-xl font-bold">Start at 0.01</span><span className="mt-4 text-xl font-extrabold text-transparent bg-clip-text bg-gradient-to-t from-purple-700 to-cyan-400"> SOL</span>
                    <span className="text-black"></span>
                 </p>
-                  <NumberInputD name={product.id} formRef={formRef} />
+                  <NumberInputD name={product.id} />
               </div>
             )
           })}
