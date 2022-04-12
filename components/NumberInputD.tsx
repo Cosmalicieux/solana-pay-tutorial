@@ -14,7 +14,8 @@ export default function NumberInputD({ name }: Props) {
       name={name}
       value={number}
       onChange={e => setNumber(Number(e.target.value))}
-      className="rounded border-none focus:ring-0 text-center bg-gray-200"
+      className="placeholder-slate-400 border-2 border-gray-200 rounded-md text-center"
+      placeholder="0.01"
     />
 
   )

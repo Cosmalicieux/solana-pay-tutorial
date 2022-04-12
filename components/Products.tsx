@@ -22,9 +22,10 @@ export default function Products({ submitTarget, enabled }: Props) {
                 <p className="text-sm mb-4 text-gray-800">{product.description}</p>
                 <p className="my-4">
                   <span className="mt-4 text-xl font-bold">Start at 0.01</span><span className="mt-4 text-xl font-extrabold text-transparent bg-clip-text bg-gradient-to-t from-purple-700 to-cyan-400"> SOL</span>
-                   <span className="text-black"></span>
                 </p>
+                <div className="mt-1">
                   <NumberInputD name={product.id} />
+                </div>
               </div>
             )
           })}

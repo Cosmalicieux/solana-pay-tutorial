@@ -7,6 +7,7 @@ interface Props {
 
 export default function NumberInput({ name, formRef }: Props) {
   const [number, setNumber] = useState(0)
+  
 
   function decrement() {
     setNumber(n => n > 0 ? n - 1 : 0)
@@ -50,7 +51,8 @@ export default function NumberInput({ name, formRef }: Props) {
         value={number}
         onChange={e => setNumber(Number(e.target.value))}
         max={12}
-        className="w-12 border-none focus:ring-0 text-center bg-gray-200"
+        placeholder="0"
+        className="placeholder-slate-400 w-12 border-none focus:ring-0 text-center bg-gray-200"
       />
       <button
         type="button"
